@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h2>Your Profile</h2>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 class="card-title">Username: {{ user.username }}</h5>
+        <p class="card-text">Email: {{ user.email }}</p>
+        <!-- Include additional fields if you've added them to the user model -->
+      </div>
+    </div>
+  </div>
+{% endblock %}
